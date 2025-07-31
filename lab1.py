@@ -1,10 +1,10 @@
-def grade()
-    user = input("Press Enter to continue or type 'EXIT' to quit: ")
-    if user == "EXIT":
+def grade():
+    marks = input("Enter the marks or type 'EXIT' to quit: ")
+    if marks == "EXIT":
         print("Exit successfully.")  # if user enter EXIT then it will exit the program
         return  # code exit
     try:
-        marks = int(input("enter the marks: "))
+        marks = int(marks)
         if 90 <= marks <= 100: # marks is greater then and equal to 90 and less then and equal to 100 then grade is A
             print("A")
         elif 75 <= marks <= 89:
