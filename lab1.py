@@ -1,5 +1,5 @@
 def grade():
-    marks = input()
+    marks = input("Enter the marks or type 'EXIT' to quit: ")
     if marks == "EXIT":
         print("Exit successfully.")  # if user enter EXIT then it will exit the program
         return  # code exit
