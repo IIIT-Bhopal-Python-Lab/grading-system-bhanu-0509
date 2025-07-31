@@ -1,8 +1,8 @@
-while True:
+def grade()
     user = input("Press Enter to continue or type 'EXIT' to quit: ")
     if user == "EXIT":
         print("Exit successfully.")  # if user enter EXIT then it will exit the program
-        break  # code exit
+        return  # code exit
     try:
         marks = int(input("enter the marks: "))
         if 90 <= marks <= 100: # marks is greater then and equal to 90 and less then and equal to 100 then grade is A
@@ -19,3 +19,4 @@ while True:
             print("Invalid input")
     except:
         print("Invalid input") # if user enter any other value then it will show invalid input
+grade() # call function
